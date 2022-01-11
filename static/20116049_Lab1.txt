@@ -1,0 +1,15 @@
+
+            Your Name
+            20116049
+            crafty
+            2048
+            DefaultL2MissRate 0.1284
+            BaselineIPC 1.6150
+            slowL1IPC 1.5473
+            slowL2IPC 1.5954
+            RandomMissRate 0.1424
+            FIFOMissRate 0.1286
+            InOrderIPC 0.8899
+            DiffWidthIPC error
+            DiffBPred 1.5778
+        

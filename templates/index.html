@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simp🥰Scalar</title>
+</head>
+<body>
+    <div class="logo text-center font-bold text-xl p-2 my-2 select-none">
+        Simp🥰Scalar
+    </div>
+    <form class="form flex flex-col items-center text-sm" method="POST">
+        {% csrf_token %}
+        <label for="enrol">
+            <input type="text" name="enrol" value="{% block enrol_cache %}{% endblock enrol_cache %}" id="enrol" class="border-2 border-black border-solid p-2 m-4 rounded-md w-56" placeholder="Enter Enrolment No">
+        </label>
+        <input type="submit" value="Process" id="process_btn" class="border-2 border-black border-solid p-1 cursor-pointer rounded-md">
+    </form>
+    <div class="text-center font-bold p-2 my-2 select-none">
+        Note: This process is purely based on my hardware and your luck, if this failed, you have bad luck <br/>
+        Note: After clicking process, this will exactly take 4 min to process the final output. So you can go and take a pee break after clicking it
+    </div>
+    {% block body %}{% endblock body %}
+</body>
+</html>

@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+{% block enrol_cache %}{{props}}{% endblock enrol_cache %}{{props}}
+{% block body %}
+<div class="text-center font-bold m-4">Successfully Processed! Click Below To Download</div>
+<div class="download flex flex-col items-center text-sm">
+    <a href="static/{{props}}_Lab1.txt" download><input type="submit" value="Download" id="download_btn" class="border-2 border-black border-solid p-1 cursor-pointer rounded-md"></a>
+</div>
+{% endblock body %}
