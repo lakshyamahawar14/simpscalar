@@ -1,2 +1,2 @@
-# simpscalar
-microarchitectural simulation using simplescalar
+# SIMPSCALAR
+### Microarchitectural simulation using simplescalar
